@@ -1,21 +1,27 @@
 variable "word_count" {
   type = number
-  description = "What is your favorite number between 1 and 10."
+  description = "What is your favorite number between 1 and 10?"
 }
 
 variable "favourite_author" {
-  type = map
-  description = "A map of the name of the last author you read. {'first_name' => '<first name>', 'last_name' => '<last name>'}"
+  type = map(string)
+  # description = "A map of the name of the last author you read{\"first_name\" => \"<first name>\", \"last_name\" => \"<last name>\"}"
+  description = "map"
 }
 
 variable "first_teacher_last_name" {
   type = string
-  description = "The last name of your first teacher."
+  description = "The last name of your first teacher?"
+}
+
+variable "favourite_color" {
+  type = string
+  description = "Favorite Color"
 }
 
 variable "icecream_flavors" {
   type = list(string)
-  description = "A list of icecream flavors you find acceptable. Ex. ['mint chip', 'coffee']"
+  description = "A list of icecream flavors you find acceptable. Ex. [\"mint chip\", \"coffee\"]"
 }
 
 variable "secret" {

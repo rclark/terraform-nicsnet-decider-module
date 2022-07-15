@@ -11,8 +11,7 @@ resource "random_pet" "pet" {
   length           = var.word_count
 }
 
-resource "random_suffle" "icecream_choice" {
+resource "random_shuffle" "icecream_choice" {
   input = var.icecream_flavors
   result_count = 1
-
 }
