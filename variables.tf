@@ -23,7 +23,12 @@ variable "icecream_flavors" {
   description = "A list of icecream flavors you find acceptable. Ex. [\"mint chip\", \"coffee\"]"
 }
 
-variable "secret" {
+variable "have_icecream" {
+  type = bool
+  description = "Can you have ice cream?"
+}
+
+variable "street_name" {
   type = string
   sensitive = true
   description = "Your secret."
