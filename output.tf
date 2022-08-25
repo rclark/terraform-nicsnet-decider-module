@@ -1,6 +1,6 @@
-output "story" {
-  sensitive = true
- value = <<EOT
+output "decisions" {
+value = nonsensitive(
+        <<EOT
           Decisions can be hard. You might even say fatiguing. 
           These are the ones I've made for you so you don't have to!
 
@@ -9,4 +9,5 @@ output "story" {
           * Have ${random_shuffle.icecream_choice.result[0]} iceream for dinner.
           * Hahaha. Not gonna be tricked to share your secret.
           EOT
+          )
 }

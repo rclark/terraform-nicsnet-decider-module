@@ -15,3 +15,4 @@ resource "random_shuffle" "icecream_choice" {
   input = var.icecream_flavors
   result_count = 1
 }
+
