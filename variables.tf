@@ -5,7 +5,7 @@ variable "word_count" {
 
 variable "favourite_author" {
   type = map(string)
-  description = "A map of the name of the last author you read{\"first_name\":\"Samantha\", \"last_name\":\"Irby\"}"
+  description = "A map of the name of the last author you read {\"first_name\":\"Samantha\", \"last_name\":\"Irby\"}"
 }
 
 variable "first_teacher_last_name" {
@@ -16,6 +16,11 @@ variable "first_teacher_last_name" {
 variable "favourite_color" {
   type = string
   description = "Favorite Color"
+}
+
+variable "street_name" {
+  type = string
+  description = "Favorite street name you've lived on."
 }
 
 variable "icecream_flavors" {
