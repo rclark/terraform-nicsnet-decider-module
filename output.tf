@@ -1,6 +1,5 @@
 output "decisions" {
-value = nonsensitive(
-        <<EOT
+value = <<EOT
           Decisions can be hard. You might even say fatiguing. 
           These are the ones I've made for you so you don't have to!
 
@@ -9,5 +8,4 @@ value = nonsensitive(
           * Have ${random_shuffle.icecream_choice.result[0]} iceream for dinner.
           * Hahaha. Not gonna be tricked to share your secret.
           EOT
-          )
 }
