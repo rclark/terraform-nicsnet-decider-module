@@ -28,7 +28,7 @@ variable "have_icecream" {
   description = "Can you have ice cream?"
 }
 
-variable "street_name" {
+variable "a_secret" {
   type = string
   sensitive = true
   description = "Your secret."
