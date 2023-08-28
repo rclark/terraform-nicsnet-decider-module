@@ -8,11 +8,15 @@ terraform {
 }
 
 resource "random_pet" "pet" {
-  length           = var.word_count
+  length = var.word_count
+  prefix = var.favourite_color
+}
+
+resource "random_pet" "pet2" {
+  length = var.word_count
 }
 
 resource "random_shuffle" "icecream_choice" {
   input = var.icecream_flavors
   result_count = 1
 }
-
