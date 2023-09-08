@@ -12,11 +12,6 @@ resource "random_pet" "pet" {
   prefix = var.favourite_color
 }
 
-resource "random_pet" "pet2" {
-  length = var.word_count
-  prefix = var.street_name
-}
-
 resource "random_shuffle" "icecream_choice" {
   input = var.icecream_flavors
   result_count = 1
